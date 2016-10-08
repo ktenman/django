@@ -1,2 +1,2 @@
 # django
-SampleApp
+https://github.com/ktenman/django/wiki
