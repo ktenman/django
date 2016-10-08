@@ -1,2 +1,2 @@
-# django
-https://github.com/ktenman/django/wiki
+# kogumik
+https://github.com/ktenman/django/wiki/Juhend
