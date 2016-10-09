@@ -1,7 +1,8 @@
 # kogumik
 **[Python Django Õppejuhed](https://github.com/ktenman/django/wiki/)**
 
-* Python 3.5.1
+* PyCharm 2016.1.3
+* Python 3.5.1 (aga peaks ka töötama 3.5.*)
 * Django 1.10.2
 
 [![Creative Commons License][image-1]][1]  
