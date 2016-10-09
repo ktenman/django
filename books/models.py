@@ -15,7 +15,7 @@ class Book(models.Model):
         return ", ".join([author.name for author in self.authors.all()])
 
     def save(self, *args, **kwargs):
-        if self.comment and self.date_commented is None: # No date specified but has a comment
+        if self.comment and self.date_commented is None:
             self.date_commented = now()
 
         super(Book, self).save(*args, **kwargs) # Extends save() method after our if-logic
