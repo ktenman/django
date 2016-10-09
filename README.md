@@ -1,5 +1,9 @@
 # kogumik
-https://github.com/ktenman/django/wiki/Juhend
+**[Python Django Õppejuhed](https://github.com/ktenman/django/wiki/)**
+
+* PyCharm 2016.1.3
+* Python 3.5.1 (aga peaks ka töötama 3.5.*)
+* Django 1.10.2
 
 [![Creative Commons License][image-1]][1]  
  This work is licensed under a [Creative Commons Attribution 4.0 International License][1].
