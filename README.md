@@ -1,9 +1,4 @@
 # kogumik
-> To setup sqlite database
-```shell
-git clone
-pyhton manage.py migrate
-```
 
 **[Python Django Õppejuhed](https://github.com/ktenman/django/wiki/)**
 
