@@ -1,5 +1,5 @@
 # kogumik
-https://github.com/ktenman/django/wiki/Juhend
+https://github.com/ktenman/django/wiki/
 
 [![Creative Commons License][image-1]][1]  
  This work is licensed under a [Creative Commons Attribution 4.0 International License][1].
