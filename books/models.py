@@ -8,3 +8,6 @@ class Book(models.Model):
     comment = models.TextField(blank=True, null=True)
     date_commented = models.DateField(blank=True, null=True)
     is_bookmarked = models.BooleanField(default=False)
+
+    def __str__(self): # adding toString() method to represent objects
+        return ("{title = '%s', author = '%s'}"% (self.title, self.author))
