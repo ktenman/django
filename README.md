@@ -1,5 +1,8 @@
 # kogumik
-**[Django Õppejuhed](https://github.com/ktenman/django/wiki/)**
+**[Python Django Õppejuhed](https://github.com/ktenman/django/wiki/)**
+
+*Python 3.5.1
+*Django 1.10.2
 
 [![Creative Commons License][image-1]][1]  
  This work is licensed under a [Creative Commons Attribution 4.0 International License][1].
