@@ -1,10 +1,10 @@
 # kogumik
-**[Python Django Õppejuhed](https://github.com/ktenman/django/wiki/)**
-
-> To initialize sqlite database
+> To setup sqlite database
 ```shell
 pyhton manage.py migrate
 ```
+
+> **[Python Django Õppejuhed](https://github.com/ktenman/django/wiki/)**
 
 * PyCharm 2016.2.3
 * Python 3.5.1 (aga peaks ka töötama 3.5.*)
