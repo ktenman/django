@@ -1,6 +1,7 @@
 # kogumik
 > To setup sqlite database
 ```shell
+git clone
 pyhton manage.py migrate
 ```
 
