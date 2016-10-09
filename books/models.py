@@ -14,11 +14,11 @@ class Book(models.Model):
     def list_authors(self):
         return ", ".join([author.name for author in self.authors.all()])
 
-    def save(self, *args, **kwargs):  # overide django built-in 'save' method
-        if self.comment and self.date_commented is None: # has comment and no date
+    def save(self, *args, **kwargs):
+        if self.comment and self.date_commented is None: # No date specified but has a comment
             self.date_commented = now()
 
-        super(Book, self).save(*args, **kwargs)
+        super(Book, self).save(*args, **kwargs) # Extends save() method after our if-logic
 
 
 class Author(models.Model):
