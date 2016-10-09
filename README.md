@@ -4,7 +4,7 @@
 pyhton manage.py migrate
 ```
 
-> **[Python Django Õppejuhed](https://github.com/ktenman/django/wiki/)**
+**[Python Django Õppejuhed](https://github.com/ktenman/django/wiki/)**
 
 * PyCharm 2016.2.3
 * Python 3.5.1 (aga peaks ka töötama 3.5.*)
