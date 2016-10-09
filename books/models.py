@@ -11,3 +11,4 @@ class Book(models.Model):
 
     def __str__(self): # adding toString() method to represent objects
         return ("{title = '%s', author = '%s'}"% (self.title, self.author))
+
