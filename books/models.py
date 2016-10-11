@@ -18,7 +18,7 @@ class Book(models.Model):
         if self.comment and self.date_commented is None:
             self.date_commented = now()
 
-        super(Book, self).save(*args, **kwargs) # Extends save() method after our if-logic
+        super(Book, self).save(*args, **kwargs)  # Extends save() method after our if-logic
 
 
 class Author(models.Model):
