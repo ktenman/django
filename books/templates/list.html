@@ -1,25 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>kogumik</title>
 </head>
 <body>
-    {% if request.user.is_authenticated %}
-        <p>Hello, {{ request.user.username | title }}! <br /> Last logged in at {{ request.user.last_login | date:"D d M Y" }}</p>
-    {% else %}
-        <p>Hello, guest!</p>
-    {% endif %}
-<main>
-    <h1>{{ books.count }} books(s)</h1>
-    {% for book in books %}
+{% if request.user.is_authenticated %}
+    <p>Hello, {{ request.user.username | title }}! <br/> Last logged in
+        at {{ request.user.last_login | date:"D d M Y" }}</p>
+{% else %}
+    <p>Hello, guest!</p>
+{% endif %}
+<h1>{{ books.count }} books(s)</h1>
+{% for book in books %}
     <p>
         {{ book.title }} by {{ book.list_authors }}
     </p>
-    {% endfor %}
-</main>
+{% endfor %}
 </body>
 </html>
