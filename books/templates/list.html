@@ -13,5 +13,13 @@
     {% else %}
         <p>Hello, guest!</p>
     {% endif %}
+<main>
+    <h1>{{ books.count }} books(s)</h1>
+    {% for book in books %}
+    <p>
+        {{ book.title }} by {{ book.list_authors }}
+    </p>
+    {% endfor %}
+</main>
 </body>
 </html>

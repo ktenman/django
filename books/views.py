@@ -1,5 +1,11 @@
 from django.shortcuts import render
+from books.models import Book
 
-# Create your views here.
 def list_books(request):
-    return render(request, "list.html")
+    books = Book.objects.all()
+
+    context = {
+        'books': books,
+    }
+
+    return render(request, "list.html", context)
