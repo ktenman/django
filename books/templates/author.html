@@ -5,6 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-
+    <h1>{{ author.name }}</h1>
+    {% for book in author.books.all %}
+        <h3>{{ book.title }}</h3>
+        <p>{{ book.comment }}</p>
+    {% endfor %}
 </body>
 </html>
