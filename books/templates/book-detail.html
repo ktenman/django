@@ -1,0 +1,4 @@
+<h3><a href="{% url 'book-detail' book.pk %}">{{ book.title }}</a></h3>
+<p>By {% for author in book.authors.all %}
+    {{ author.name }}{% endfor %}</p>
+<p>{{ book.comment|linebreaks }}</p>

@@ -1,7 +1,4 @@
 {% extends "base.html" %}
 {% block content %}
-<h3>{{ book.title }}</h3>
-<p>By {% for author in book.authors.all %}
-    {{ author.name }}{% endfor %}</p>
-<p>{{ book.comment|linebreaks }}</p>
+{% include "book-detail.html" %}
 {% endblock %}
