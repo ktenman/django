@@ -1,8 +1,0 @@
-{% extends "base.html" %}
-{% block content %}
-    <h1>{{ author.name }}</h1>
-    {% for book in author.books.all %}
-        <h3><a href="{% url 'book-detail' book.pk %}">{{ book.title }}</a></h3>
-        <p>{{ book.comment }}</p>
-    {% endfor %}
-{% endblock %}
