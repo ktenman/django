@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>kogumik</title>
-</head>
-<body>
-{% if request.user.is_authenticated %}
-    <p>Hello, {{ request.user.username | title }}! <br/> Last logged in
-        at {{ request.user.last_login | date:"d.m.Y" }}</p>
-{% else %}
-    <p>Hello, guest!</p>
-{% endif %}
+{% extends "base.html" %}
+{% block content %}
 <h1>{{ books.count }} books(s)</h1>
 {% for book in books %}
     <p>
-        {{ book.title }} by {{ book.list_authors }}
+        {% include "book-detail.html" %}
     </p>
 {% endfor %}
-</body>
-</html>
+{% endblock %}
