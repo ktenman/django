@@ -1,5 +1,7 @@
 from django.contrib import admin
+
 from .models import Author, Book
+
 
 class BookAdmin(admin.ModelAdmin):
     fieldsets = [
@@ -11,6 +13,7 @@ class BookAdmin(admin.ModelAdmin):
 
     def book_authors(self, obj):
         return obj.list_authors()
+        # 'BOOK AUTHORS' asemel kuvatakse 'AUTHOR(S)'
 
     book_authors.short_description = 'Author(s)'
 
@@ -21,5 +24,5 @@ class BookAdmin(admin.ModelAdmin):
     search_fields = ['title', 'authors__name', ]
 
 # Register your models here.
-admin.site.register(Author)
 admin.site.register(Book, BookAdmin)
+admin.site.register(Author)
