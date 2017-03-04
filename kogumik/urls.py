@@ -23,6 +23,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', list_books, name='books'),
     url(r'^authors/$', AuthorList.as_view(), name='authors'),
-    url(r'^books/(?P<pk>[-\w]+)/$', BookDetail.as_view(), name='book-detail'),
-    url(r'^authors/(?P<pk>[-\w]+)/$', AuthorDetail.as_view(), name='author-detail'),
+    url(r'^books/(?P<pk>\d+)/$', BookDetail.as_view(), name='book-detail'),
+    url(r'^authors/(?P<pk>\d+)/$', AuthorDetail.as_view(), name='author-detail'),
 ]
